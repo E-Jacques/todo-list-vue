@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
+$green-color: #28b463;
+$orange-color: #f39c12;
+
+.todo {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+#my-name {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.effective-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-text-desc {
+  width: 40vw;
+  height: 40px;
+}
+
+.task-list {
+  list-style-type: none;
+}
+
+.input-text-todo {
+  width: 40vw;
+  text-align: center;
+}
+
+.task-label {
+  padding: 0;
+  margin: 0;
+}
+
+.task-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 35vw;
+}
+
+.task-statue {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: $orange-color;
+}
+
+.finishedStatue {
+  background-color: $green-color;
+}
+
+.main-part {
+  width: 40vw;
+}
+
+.task-desc {
+  border-left: $orange-color 2px solid;
+  width: calc(35vw - 20px);
+  margin-left: 10px;
+}
+
+.taskDescFinished {
+  border-left: $green-color 2px solid;
+}
+
+.action {
+  cursor: pointer;
+}
+
+.text-field {
+  padding: 0;
+  margin: 0 0 0 20px;
+
+  p {
+    padding: 0;
+    margin: 0;
+    text-align: start;
+  }
+}
+
+.bottom-part {
+  width: 40vw;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+
+.action-button {
+  display: flex;
+  flex-direction: row;
+  width: 12vw;
+  justify-content: space-between;
+}
+
+.action-text {
+  opacity: 0.6;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    scale: 1.25;
+  }
+}
+
+.selection {
+  opacity: 1;
+}
+
+.control-set {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 2vw;
+
+  user-select: none;
+}
+
+.control-set {
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
